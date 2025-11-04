@@ -16,21 +16,21 @@ export function ProductShowcase({ onBuyClick }: ProductShowcaseProps) {
       hex: "#FFFFFF",
       border: "#E8E8E8",
       image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2010.03.11_db198ada-PueyIJ7FBqudRGNpk7HakqjswdwzTe.jpg",
+        "/white-fan.jpg",
     },
     {
       name: "Black",
       hex: "#1A1A1A",
       border: "#333333",
       image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_tewfsftewfsftewf%281%29-zAFBjX1JTlNOKnhxl7wFQm4YkYPSGs.png",
+        "/black-fan.png",
     },
     {
       name: "Blue",
       hex: "#4A90E2",
       border: "#3575CC",
       image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_tewfsftewfsftewf-hxpgILlRJTf1gvZyJB7i8qZHzylt68.png",
+        "/blue-fan.png",
     },
   ];
 
@@ -51,16 +51,16 @@ export function ProductShowcase({ onBuyClick }: ProductShowcaseProps) {
           {/* Left: Color Showcase with Visual Display */}
           <div className="flex flex-col items-center gap-8 w-full">
             {/* Product Display */}
-            <div className="w-full bg-gradient-to-br from-[#EBF5DF] to-[#F5F5F5] rounded-3xl p-12 flex items-center justify-center min-h-96 shadow-md">
-              <div className="relative w-full max-w-sm h-80">
-                {/* <Image
+            <div className="w-full rounded-3xl border-2 border-[#BAD4AA] p-12 flex items-center justify-center min-h-96 shadow-lg">
+              <div className="relative w-full max-w-sm h-100">
+                <Image
                   src={currentColor.image || "/placeholder.svg"}
                   alt={`Wiki Portable Fan - ${currentColor.name}`}
-                  width={400}
-                  height={400}
+                  width={800}
+                  height={800}
                   className="w-full h-auto object-contain"
                   priority
-                /> */}
+                />
               </div>
             </div>
 
